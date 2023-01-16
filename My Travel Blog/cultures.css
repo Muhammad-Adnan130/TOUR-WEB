@@ -1,0 +1,112 @@
+#hero{
+    height: 62.5rem;
+    background-image: url(/images/culture.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+header{
+    background-color: rgba(104, 67, 67, 0.9);
+    box-shadow: 2px 4px 8px rgb(60, 60, 60);
+    border-radius: 20px;
+
+}
+
+#hero-content{
+    width: 56.25rem;
+    background-color: rgba(51, 47 , 47,0.5);
+    box-shadow: 2px 4px 8px rgb(60, 60, 60);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3.1rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+#hero-content:hover{
+    transform: scale(1.1);
+}
+#hero-content h1{
+    color: rgb(175, 245, 245);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0;
+}
+#hero-content p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.25rempx;
+    font-weight: 300px;
+    margin-bottom: 30px;
+}
+#hero-content a{
+    text-decoration: none;
+    background-color: rgb(156, 235, 231);
+    padding: 0.75rem 1.5rem;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    top: 20px;
+}
+#hero-content a:hover{
+    background-color: rgb(155, 230, 100);
+}
+.destination img{
+    height: 12.5rem;
+    width: 18.75rem;
+    box-shadow: 2px 4px 8px rgb(67, 68, 68);
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.7s ease-out;
+}
+.destination img:hover{
+    transform: scale(1.2);
+}
+#destinations{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    margin: auto;
+    margin-bottom: 40px;
+
+
+}
+
+.destination p{
+    text-align: left;
+    color: rgb(236, 74, 10);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 10px;
+
+}
+#highlights h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(145, 66, 66);
+}
+#highlights{
+    padding: 1.5rem;
+    background: linear-gradient(45deg, rgb(14, 216, 203), rgb(220 243 240));
+}
+@media(max-width:768px) {
+    #destinations{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    #hero-content{
+        width: 70%;
+    }    
+    header nav{
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+    }
+}
+
+
+
+

@@ -1,0 +1,114 @@
+#hero{
+    height: 62.5rem;
+    background-image: url(/images/landscape.jpg);
+    background-size: cover;
+    background-position:center;
+
+}
+
+#hero-content{
+    width: 56.25rem;
+    background-color: rgba(51, 47 , 47,0.3);
+    box-shadow: 2px 4px 8px rgb(60, 60, 60);
+    border-radius: 20px;
+    text-align: center;
+    padding: 3.1rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+main h1{
+    color: rgb(75, 4, 45);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0;
+}
+#hero-content p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.25rempx;
+    font-weight: 300px;
+    margin-bottom: 30px;
+}
+#hero-content a{
+    text-decoration: none;
+    background-color: rgb(156, 235, 231);
+    padding: 0.75rem 1.5rem;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    top: 20px;
+}
+#hero-content a:hover{
+    background-color: rgb(155, 230, 100);
+}
+main li img{
+    width: 22rem;
+    height: 15rem;
+}
+main ul{
+
+    width: 75rem;
+    margin: 48px auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 15px;
+}
+li:nth-of-type(5){
+    grid-column: 1/span 2;
+}
+li:nth-of-type(10){
+    grid-column: 1/span 2;
+}
+main li{
+    display: flex;
+    background-color: rgb(200, 243, 225);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    height: 15.625rem;
+}
+
+
+.item-content{
+    padding: 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-content h2{
+    margin: 0%;
+}
+.action{
+    text-align: right;
+}
+.action a{
+    text-decoration: none;
+    padding: 6px;
+    color:rgb(149, 6, 206);
+}
+.action a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(156, 235, 231);
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    top: 20px;
+}
+@media(max-width:768px){
+    main ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22rem;
+    }
+    main li{
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+        width: 22rem;
+    }
+
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/budget.css">
+    <title>MY Travel Blog</title>
+  </head>
+  <body>
+    <header id="container">
+      <div id="page-logo">
+        <a href="/#"> Travel Blog</a>
+      </div>
+      <div>
+        <nav>
+          <li>
+            <ul>
+              <a href="/places.html">Destinations</a>
+            </ul>
+            <ul>
+              <a href="">Activities</a>
+            </ul>
+            <ul>
+              <a href="/cultures.html">Cultures</a>
+            </ul>
+            <ul>
+              <a href="about.html">About us</a>
+            </ul>
+          </li>
+        </nav>
+      </div>
+      <a class="menu-btn" href="#side-drawer">
+        <span> </span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <aside id="side-drawer">
+      <header>
+        <a class="menu-btn" href="#">
+          <span> </span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <li>
+          <ul>
+            <a href="/places.html">Destinations</a>
+          </ul>
+          <ul>
+            <a href="">Activities</a>
+          </ul>
+          <ul>
+            <a href="/cultures.html">Cultures</a>
+          </ul>
+          <ul>
+            <a href="/about.html">About us</a>
+          </ul>
+        </li>
+      </nav>
+    </aside>
+    <main>
+
+      <section id="highlights">
+          <h2>Get a Budget Qoute</h2>
+          <form action="/" method="GET">
+            <section>
+                <h3>Your Personal Details</h3>
+                <ul>
+                    <li>
+                    <label for="username">Your Name</label>
+                    <input type="text" name="user-name" id="username" required placeholder="First & Last Name">
+                    </li>
+                    <li>
+                        <label for="useremail">Your Email Address</label>
+                        <input type="email" name="user-email" id="useremail" required>
+
+                    </li>
+                    <li>
+                        <label for="userage">Your Age</label>
+                        <input type="number" step="1" name="user-age" id="userage" required min="18" max="35" placeholder="Minimum required age is 18">
+
+                    </li>
+
+                </ul>
+            </section>
+            <section>
+                <h3>More Details</h3>
+                <ul>
+                    <li>
+
+                        <label for="userpass">Planned No. of Days</label>
+                        <input type="number" name="userpass" id="userpass" required  placeholder="Minimum 8 days">
+                    </li>
+                    <li>
+                        <label for="birthdate">Enter BirthDate</label>
+                        <input type="date" name="birth-date" id="birthdate" required min="2005-01-01" max="2025-01-01" >
+
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Your choices</h3>
+                <ul>
+                    <li>
+
+                        <label for="selectarea">Choose the area you want to visit</label>
+                        <select name="select-area" id="selectarea" required>
+                            <option value="hilly">Lush Green Hilly Areas</option>
+                            <option value="Flat">Enriched Natural Beauty plain Areas</option>
+                            <option value="Snowy">Snowy Hills</option>
+                        </select>
+                    </li>
+                    <li>
+    
+                        <h3>How should we verify your Account</h3>
+                    <li class="form-inline-control">
+            
+                        <input type="radio" name="verify" id="sms" value="sms" required>
+                        <label for="sms">Verify by SMS</label>
+                    </li>
+                    <li class="form-inline-control">
+            
+                        <input type="radio" name="verify" id="call" value="call" required>
+                        <label for="call">Verify by call</label>
+                    </li>
+                    <li class="form-inline-control">
+            
+                        <input type="radio" name="verify" id="Email" value="email" required>
+                        <label for="Email">Verify by Email</label>
+                    </li>
+                    </li>
+                    <li>
+    
+                        <h3>How should we contact you?</h3>
+                        <li class="form-inline-control">
+                            <input type="checkbox" name="contact" id="call" required>
+                            <label for="call">By Call</label>
+                        </li>
+                        <li class="form-inline-control">
+                            <input type="checkbox" name="contact" id="SMS" required>
+                            <label for="SMS">BY SMS</label>
+                        </li>
+                    </li>
+                </ul>
+                
+
+
+
+            </section>
+
+            <hr>
+            <section>
+                <h3>Any Query?</h3>
+
+                <label for="userquery">Ask if you have any Query</label>
+                <textarea name="query" id="userquery" cols="30" rows="5" required placeholder="Your Opinion will Help us Alot"></textarea>
+            </section>
+            <section>
+                <h3>Accept Terms and Conditions</h3>
+                <div class="form-inline-control">
+                    <input type="checkbox" name="check-terms" id="checkterms">
+                    <label for="checkterms">Agree to Terms</label>
+                </div>                
+            </section>
+            <section>
+                <h3>Upload Planned Schedule(if planned any)</h3>
+                <label for="pic">Upload planning file</label>
+                <input type="file" name="pic" id="pic">
+            </section>
+            <section id="button">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </section>
+
+            
+
+    
+    
+            
+    
+
+        </form>
+
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li id="logo">
+          <a href="https://www.facebook.com"><img src="/images/facebook.png" alt="Facebook"></a>
+        </li>
+        <li id="logo">
+          <a href="https://www.instagram.com"><img src="/images/insta.png" alt="Instagram"></a>
+        </li>
+        <li id="logo">
+          <a href="https://wa.me/qr/T3WX3RAAM4FXD1"><img src="/images/whatsapp.png" alt="whatsapp"></a>
+
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

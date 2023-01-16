@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    background-color: aqua;
+   
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+#page-logo a{
+    padding: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(145, 66, 121);
+    text-shadow: 1px 1px 5px rgb(1, 1, 1);
+    font-size: 3.1rem;
+    text-decoration: none;
+}
+ul a{
+    text-decoration: none;
+}
+
+header li{
+    display: flex;
+    
+    
+}
+header ul{
+    margin-left: 1.25rem;
+}
+header a{
+    text-decoration: none;
+    color: rgb(145, 66, 121);
+    padding: 0.75rem 1.5rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+header a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(156, 235, 231);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.25rem;
+    font-weight: bold;
+    top: 1.25rem;
+}
+footer{
+    background: linear-gradient(45deg, rgb(24 24 24), rgb(25 29 29));
+    padding: 2.5rem;
+}
+
+logo{
+    margin: auto;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 3.2rem;
+}
+#logo img{
+    width: 100%;
+    height: 100%;
+
+}
+.menu-btn{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+.menu-btn span{
+    width: 100%;
+    height: 6px;
+    background-color: aliceblue;
+}
+#side-drawer{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#side-drawer:target{
+    display: block;
+}
+#side-drawer ul{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+#side-drawer li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 4rem 1rem;
+
+}
+#side-drawer a{
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+}
+#side-drawer a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(156, 235, 231);
+    padding: 0.75rem 1.5rem;
+    border-radius: 1.25rem;
+    font-weight: bold;
+    top: 1.25rem;
+}
+#side-drawer header{
+        height: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1rem 3rem;
+      
+}
+@media(max-width:768px){
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25rem;
+        height: 18rem;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    header nav{
+        display: none;
+    }
+}

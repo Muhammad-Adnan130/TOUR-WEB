@@ -1,0 +1,7 @@
+#hero{
+    height: 62.5rem;
+    background-image: url(/images/fly.jpg);
+    background-size: cover;
+    background-position:center;
+
+}
